@@ -1,16 +1,16 @@
-# Housingdata-analysis
+# Housing Data Analysis
 
 # 1. Introduction
 This report presents a comprehensive data analysis of a housing dataset containing information on residential properties. The goal of the analysis is to uncover key patterns that influence house prices based on the amenities in the different houses in the areas. Also to assess data quality, and build predictive insights to inform pricing strategies or investment decisions.
 
-# 2. Objective
+# 2. Objectives
 The purpose of this project is to analyze a housing dataset to:
 ● Determine the average, minimum, and maximum house prices in the different
-Area
+  Area
 ● Identify structural and feature-based patterns influencing pricing
 ● Explore the relationship between property area, air-condition, number of bedrooms,
-and house pricing
- Target Variable (Sales Price)
+  and house pricing
+● Target Variable (Sales Price)
 ● Support predictive insights and guide prescriptive strategies for pricing and development focus
 
 # 3. Project Overview
@@ -19,18 +19,20 @@ This project involved analyzing a dataset with 378 housing records across 13 var
 
 # 4. Methodology
 
-A. Data Cleaning
+# A. Data Cleaning
 ● Column Adjustments: Used auto-fit for better visibility (manual and VBA method).
 ● Filter Application: Enabled filters to inspect specific features like main road or guestroom (none found).
 ● Duplicates: No duplicate records found.
 ● Blank Cells: Checked using filters and 'Go To Special' function; none f● Priceound.
 ● Formatting: Bolded headers and froze the top row. Structured the dataset as a table for analysis readiness.
 
-B. Exploratory Data Analysis (EDA)
+# B. Exploratory Data Analysis (EDA)
 
 ![image](https://github.com/user-attachments/assets/cf3d3210-386f-47c5-9298-7bed3edb98b7)
 
+![image](https://github.com/user-attachments/assets/0870687f-005b-4dad-8e8c-29f034965c40)
 
+# I. 
 ● Price:
 ○ Max: GHS 13,300,000.00
 ○ Min: GHS 1,750,000.00
@@ -50,6 +52,12 @@ B. Exploratory Data Analysis (EDA)
 
 # ii. Categorical Summary (PivotTable Counts)
 
+# No	Features	Yes	No
+1	Basement	        102	276
+2	Hot Water Heating	17	363
+3	Air Conditioning	115	263
+4	Preferred Area	  89	289
+5	Finishing Status	157	98
 
 # iii. Price Ranges
 ● Low Price: 254 homes
@@ -62,11 +70,8 @@ B. Exploratory Data Analysis (EDA)
 # Visuals Included:
 
 ● Bar chart of Price Range
-
 ● Scatter Plot: Area vs Price (with trendline & R² = 0.2691)
-
 ● Bar chart: Air Conditioning Status across Price Ranges
-
 ● KPIs: Max Area, Low Price House Count, Air-conditioned Homes
 
 # Story:
@@ -80,18 +85,14 @@ The majority of homes (67%) fall into the low-price category. Despite the highes
 ![image](https://github.com/user-attachments/assets/cffd8eb1-aa98-477e-b5f3-ec626d96dcb8)
 
 # ● Price vs Area: Weak positive correlation (r ≈ 0.52)
-● Price vs Bedrooms: Mild relationship
-
-● Interpretation: Area influences price more than number of bedrooms but is not a sole factor.
+  ● Price vs Bedrooms: Mild relationship
+  ● Interpretation: Area influences price more than number of bedrooms but is not a sole factor.
 
 # Price Categories using IF Logic
 
 Used Excel IF statements to classify homes:
-
 ○ Low: < GHS 5,000,000
-
 ○ Medium: 3M–8M
-
 ○ High: > 8M
 
 Used PivotTables to explore how features like AC, preferred area, and furnishing status vary across price bands.
@@ -101,11 +102,8 @@ Used PivotTables to explore how features like AC, preferred area, and furnishing
 ![image](https://github.com/user-attachments/assets/cf80aa13-6a58-462e-8532-e615198a14dc)
 
 # Visuals Included:
-
 ● Pie charts: AC and Prefarea status
-
 ● Column charts: Furnishing distribution
-
 ● Regression trendline chart: Area vs Price
 
 # Story:
@@ -114,36 +112,31 @@ Higher-priced homes tend to have air conditioning, be in preferred areas, and be
 # 8. Results – Full Data Story
 
 The dataset reveals that the majority of houses are priced below GHS 5 million. Factors such as AC, preferred area, and furnishing increase the likelihood of higher pricing. However, area alone does not strongly dictate price. The average home has 3 bedrooms, 1 bathroom, and minimal luxury features.
-
 Predictive modeling indicates that price trends are not affected by area; other factors significantly influence final pricing. The most valuable homes tend to be fully equipped and well-located
 
 
 # 9. Discussion & Conclusion
 # Insights:
 ● Developers should invest in comfort features (AC, furnishing) and location selection (preferred areas) for value addition.
-
 ● The majority of homes are underpriced due to a lack of features.
-
 ● Regression is useful, but should be supported by feature scoring or advanced modeling for stronger predictions.
 
 # 10.   Recommendations:
 
 ● Add a guestroom and improve heating systems to increase value
-•	The strongest predictors of housing price are related to size, quality and play grounds, markets should be considered in future developments
+•	The strongest predictors of housing price are related to size, quality and play grounds, markets should be considered in future 
+   developments
 ● Target developments with more premium features for preferred area properties
-
 ● Use What-If Analysis for development planning (e.g., how much area to achieve the target price)
 
 
 # Prepared By: Nicholas Tawiah
-
 # Toolkits Used: Excel (Formulas, PivotTables, Charts, Regression)
-
 # Project Dataset: Housing Dataset (.xlsm)
 
 
 
-# End of Report
+End of Report
 
 
 
